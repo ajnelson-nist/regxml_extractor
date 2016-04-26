@@ -27,12 +27,25 @@
 # LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 # NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.    
+#
+# For changes made after April 1, 2016:
+#
+# This software was developed at the National Institute of Standards
+# and Technology by employees of the Federal Government in the course
+# of their official duties. Pursuant to title 17 Section 105 of the
+# United States Code this software is not subject to copyright
+# protection and is in the public domain. NIST assumes no
+# responsibility whatsoever for its use by other parties, and makes
+# no guarantees, expressed or implied, about its quality,
+# reliability, or any other characteristic.
+#
+# We would appreciate acknowledgement if the software is used.
 
 """
 For usage instructions, see the argument parser description below, or run this script without arguments.
 """
 
-__version__ = "0.4.0"
+__version__ = "0.4.1"
 
 import sys
 
@@ -68,7 +81,7 @@ def fileobject_is_hive(fi):
       "system32/config/software",
       "system32/config/system",
       "system32/config/components",
-      "local settings/application data/microsoft/windows/usrclass.dat")):
+      "microsoft/windows/usrclass.dat")):
         return True
 
     return False
